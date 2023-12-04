@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212; /* Dark background for the body */
+    color: #e0e0e0; /* Lighter text for better readability on dark background */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #232323 25%, #1b1b1b 25%, #1b1b1b 50%, #232323 50%, #232323 75%, #1b1b1b 75%);
+    background-size: 40px 40px; /* Adds the striped pattern from earlier */
+    border-bottom: 2px solid #444; /* Darker border color */
+}
+
+.main-content {
+    padding: 0 20%; /* Adds padding of 20% to the left and right sides of the main content area */
+    text-align: center;
+}
+
+#scp-logo {
+    max-height: 100px;
+    filter: brightness(0) invert(1); /* Inverts the logo color for dark mode */
+}
+
+#document-info {
+    text-align: right;
+    color: #e0e0e0; /* Ensures document info is readable on dark background */
+    font-size: 24px;
+}
+
+#document-info p {
+    margin: 5px;
+    color: #e0e0e0; /* Lighter paragraph text for readability */
+}
+
+.main-content h1 {
+    font-size: 48px; /* Adjust size as needed */
+    color: #5959ff; /* Sets the text color to blue */
+    text-align: center; /* Centers the text */
+    position: relative; /* Allows for absolute positioning of pseudo-elements */
+    padding: 0 20px; /* Adds space around the text to prevent lines from touching the text */
+    display: inline-block; /* Makes the element inline for the lines to align properly */
+    margin: 20px 0; /* Adds some space above and below the heading */
+}
+
+.main-content h1:before,
+.main-content h1:after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Aligns the line with the middle of the text */
+    width: 20%; /* Length of the horizontal line */
+    height: 1px; /* Thickness of the line */
+    background-color: #5959ff; /* Color of the line */
+    transform: translateY(-50%); /* Ensures the line is centered vertically */
+}
+
+.main-content h1:before {
+    left: -25%; /* Position the line before the text */
+}
+
+.main-content h1:after {
+    right: -25%; /* Position the line after the text */
+}
