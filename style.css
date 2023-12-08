@@ -15,8 +15,12 @@ header {
     border-bottom: 2px solid #444; /* Darker border color */
 }
 
+.FloatingLeft h2{
+	text-align: left;
+}
+
 .main-content {
-    padding: 0 20%; /* Adds padding of 20% to the left and right sides of the main content area */
+    padding: 0 30%; /* Adds padding of 20% to the left and right sides of the main content area */
     text-align: center;
 }
 
@@ -45,6 +49,11 @@ header {
     margin: 20px 0; /* Adds some space above and below the heading */
 }
 
+.main-content p {
+	font-size: 20px;
+	text-align: left;
+}
+
 .main-content h1:before,
 .main-content h1:after {
     content: '';
@@ -62,4 +71,51 @@ header {
 
 .main-content h1:after {
     right: -25%; /* Position the line after the text */
+}
+
+button {
+    background-color: #121212; /* Same as the page background */
+    color: #ff0000; /* Red text */
+    border: 1px solid #ff0000; /* Small red outline */
+    padding: 15px 0; /* Vertical padding */
+    font-family: Arial, sans-serif; /* Matches the font of the body */
+    font-size: 18px; /* Sets an appropriate font size */
+    text-transform: uppercase; /* Makes the text uppercase for a more stylized look */
+    letter-spacing: 1px; /* Increases letter spacing for better readability */
+    width: 100%; /* Sets width to 100% of the parent container */
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    display: block; /* Makes the button a block element to fill the width */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Adds some margin at the bottom for spacing */
+}
+
+button:hover {
+    background-color: #1a1a1a; /* Slightly lighter shade on hover */
+    border-color: #ff4747; /* Lighter red for the border on hover */
+}
+
+button:active {
+    background-color: #0f0f0f; /* Darker on active for a tactile feel */
+    border-color: #bf0000; /* Darker red for the border on active */
+}
+
+/* unvisited link */
+a:link {
+  color: #7FFFD4;
+}
+
+/* visited link */
+a:visited {
+  color: #7FFFD4;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7FFFD4;
+}
+
+/* selected link */
+a:active {
+  color: #7FFFD4;
 }
