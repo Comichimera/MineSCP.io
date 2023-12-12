@@ -24,6 +24,12 @@ header {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .main-content {
+        padding: 0 30%; /* Adds padding on desktop */
+    }
+}
+
 #scp-logo {
     max-height: 150px;
 }
