@@ -20,7 +20,7 @@ header {
 }
 
 .main-content {
-    padding: 0 30%; /* Adds padding of 20% to the left and right sides of the main content area */
+    padding: 0;
     text-align: center;
 }
 
