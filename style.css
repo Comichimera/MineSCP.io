@@ -24,9 +24,10 @@ header {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .main-content {
-        padding: 0 30%; /* Adds padding on desktop */
+/* Styles for screens wider than 768px (typically desktops) */
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 30%;
     }
 }
 
