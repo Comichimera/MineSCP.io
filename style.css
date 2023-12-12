@@ -20,15 +20,8 @@ header {
 }
 
 .main-content {
-    padding: 0;
+    padding: 0 30%;
     text-align: center;
-}
-
-/* Styles for screens wider than 768px (typically desktops) */
-@media screen and (min-width: 768px) {
-    body {
-        padding: 0 30%;
-    }
 }
 
 #scp-logo {
