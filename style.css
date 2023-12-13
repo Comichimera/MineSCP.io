@@ -9,7 +9,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+	padding-right: 5%;
+	padding-left: 5%;
     background: linear-gradient(135deg, #232323 25%, #1b1b1b 25%, #1b1b1b 50%, #232323 50%, #232323 75%, #1b1b1b 75%);
     background-size: 40px 40px; /* Adds the striped pattern from earlier */
     border-bottom: 2px solid #444; /* Darker border color */
@@ -20,12 +21,45 @@ header {
 }
 
 .main-content {
-    padding: 0 30%;
+    padding: 0 30%; /* Adds padding of 20% to the left and right sides of the main content area */
     text-align: center;
 }
 
+header > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
 #scp-logo {
-    max-height: 150px;
+    max-height: 200px;
+    margin-right: 20px; /* Adds space between the logo and the text */
+}
+
+#scp-foundation-text {
+    text-align: left;
+    color: #ffd700; /* Sets the color of the text to yellow */
+}
+
+#scp-foundation-text p:first-child {
+    font-size: 48px; /* Slightly larger font for 'SCP Foundation' */
+    font-weight: bold;
+    margin: 0; /* Removes default margin */
+    background: linear-gradient(to bottom, #ffd700, #93781f); /* Gold gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Makes the text color transparent to reveal the gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds drop shadow */
+}
+
+#scp-foundation-text p:last-child {
+    font-size: 16px; /* Slightly smaller font for 'Secure, Contain, Protect' */
+    margin: 0; /* Removes default margin */
+	font-weight: bold;
+    background: linear-gradient(to bottom, #ffd700, #93781f); /* Gold gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Makes the text color transparent to reveal the gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 }
 
 #document-info {
